@@ -27,10 +27,13 @@ interface BaseButtonProps {
 const Button: React.FC<BaseButtonProps> = props => {
   const { btnType, disabled, size, children, href } = props
 
+  // prefix
+  const btnPrefix = 'yun-btn'
+
   // btn btn-lg btn-primary
-  const classes = classNames('btn', {
-    [`btn-${btnType}`]: btnType,
-    [`btn-${size}`]: size,
+  const classes = classNames(btnPrefix, {
+    [`${btnPrefix}-${btnType}`]: btnType,
+    [`${btnPrefix}-${size}`]: size,
     disabled: btnType === ButtonType.Link && disabled
   })
 

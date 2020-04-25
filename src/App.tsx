@@ -4,11 +4,18 @@ import Button, { ButtonType, ButtonSize } from './components/Button/button'
 function App() {
   return (
     <div className='App'>
-      <Button>Hello</Button>
+      <Button>Primary</Button>
       <Button btnType={ButtonType.Primary} size={ButtonSize.Large}>
-        Hello
+        Large
       </Button>
-      <Button btnType={ButtonType.Link} href='baidu.com'>
+      <Button btnType={ButtonType.Danger}>Danger</Button>
+      <Button disabled size={ButtonSize.Small}>
+        Small
+      </Button>
+      <Button btnType={ButtonType.Link} href='/'>
+        Hello link
+      </Button>
+      <Button disabled btnType={ButtonType.Link} href='/'>
         Hello link
       </Button>
     </div>
