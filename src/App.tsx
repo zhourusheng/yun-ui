@@ -4,7 +4,7 @@ import Button, { ButtonType, ButtonSize } from './components/Button/button'
 function App() {
   return (
     <div className='App'>
-      <Button>Primary</Button>
+      <Button autoFocus>Primary</Button>
       <Button btnType={ButtonType.Primary} size={ButtonSize.Large}>
         Large
       </Button>
