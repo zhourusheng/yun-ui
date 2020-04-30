@@ -7,10 +7,12 @@ import MenuItem from './components/Menu/menuItem'
 function App() {
   return (
     <div className='App'>
-      <Menu defaultIndex={0}>
-        <MenuItem>color link</MenuItem>
-        <MenuItem>color link 2</MenuItem>
-        <MenuItem>color link 3</MenuItem>
+      <Menu defaultIndex={0} onSelect={(index) => {
+        console.log(index)
+      }}>
+        <MenuItem index={0}>color link</MenuItem>
+        <MenuItem index={1} disabled>color link 2</MenuItem>
+        <MenuItem index={2}>color link 3</MenuItem>
       </Menu>
       <Button autoFocus>Primary</Button>
       <Button btnType={ButtonType.Primary} size={ButtonSize.Large}>
