@@ -14,11 +14,11 @@
 ) {
   color: $color;
   background: $background;
-  border: $border;
+  border-color: $border;
   &:hover {
     color: $hover-color;
     background: $hover-background;
-    border: $hover-border;
+    border-color: $hover-border;
   }
   &:focus,
   &.focus {
